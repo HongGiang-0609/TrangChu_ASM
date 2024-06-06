@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+               
+            .button{
+            background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+            margin: 10px;
+            padding: 5px 10px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .button:hover {
+            background-position: right center; 
+            text-decoration: none;
+          }
+         
+      .form-group{
+        margin: 10px 2 px;
+        color: red;
+      }
+      .form-control{
+        margin: 3px 0px;
+        padding: 5px;
+        border: none;
+        width: 200px;
+        border-radius: 3px;
+        box-shadow: 0 0 3px blue;
+        color: black;
+        display: block;
+        outline: none;
+      }
+      .form-control:focus{
+        box-shadow:  0 0 3px violet;
+        color: pink;
+      }
+      .button1{
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 0 3px gray;
+        padding: 5px 10px;
+        margin: 10px;
+        outline: none;
+      }
+      
+      .button1:disabled{
+        text-decoration: line-through;
+        color: white;
+        background-color: rgb(154, 151, 151);
+        
+      }
+      .form-group1{
+        display: flex;
+      }
+      
+    </style>
+
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+      <label><b>User Name:</b></label><br />
+      <input name="id" type="text" placeholder="Nhập Email của bạn"   class="form-control"/>
+    </div>
+      <div class="form-group">
+      <label><b>Password:</b></label><br />
+      <input name="pw" type="password" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label><input name="re" type="checkbox" /><b>Ghi nhớ mật khẩu</b></label>
+      </div>
+      
+     <div class="bt">
+       <div class="form-group1">
+        <button class="button"><b>Login</b></button>
+        <button class="button1" disabled><b>Huy</b></button>
+      </div>
+     </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: orangered;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+    padding: 0px;
+    width: 20%;
+  }
+  
+  .menu-container {
+    list-style: none;
+    border: 1px solid white;
+    background-color: white;
+    width: 200px;
+    padding: 5px ;
+  
+   
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
+    border-bottom: 1px do orangered;
+    
+  }
+  
+  .menu-item:hover {
+    border-bottom: 1px dotted white;
+    background-color: rgb(191, 165, 116);
+    color: white;
+    font-weight: bold;
+  }
+  .menu-item:hover > .menu-link {
+    color: orange;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: rgb(62, 90, 248);
+  }
+  

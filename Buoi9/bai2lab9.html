@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .label{
+            margin: 5px;
+            padding: 10px;
+
+        }
+        .text{
+            font-weight:bold ;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <p class="text">
+        <label>Họ và tên:</label>
+        <br />
+        <input name="tên" type="text">
+        <br />
+        <label>Giới tính:</label>
+        <label><input name="gender" type="radio"checked/>Nam</label>
+        <label><input name="gender" type="radio"/>Nữ</label><br />
+        
+        <label>Hình ảnh:</label>
+        <br />
+        <input name="photo" type="file">
+        <br />
+        <br />
+        <label>Quốc tịch:</label>
+        <select>
+            <option>Việt Nam</option>
+            <option>Thái Lan</option>
+            <option>Mỹ</option>
+            <option>Lào</option>
+            <option>Trung Quốc</option>
+     </select>
+        <div>
+            <p class="text">
+                <label>Sở thích:</label><br />
+                <label><input name ="hobby" type="checkbox" value="1" />Thể thao</label>
+                <label><input name ="hobby" type="checkbox" value="2" />Du lịch</label>
+                <label><input name ="hobby" type="checkbox" value="3" />Âm nhạc</label>
+                <label><input name ="hobby" type="checkbox" value="4" />Ẩm thực</label>
+            </p>
+     </div>
+        <p class="text"><label>Ghi chú:</label><br /></p>
+        <textarea rows="7" cols="60"></textarea>
+    </p>
+    <hr />
+    <div class="bt">
+         <button class="button"><b>Đăng ký</b></button>
+         <button class="button"><b>Nhập lại</b></button>
+       </div>
+
+</body>
+</html>

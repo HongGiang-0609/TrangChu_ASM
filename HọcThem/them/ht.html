@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Continuously</title>
+</head>
+<body>
+    <div id="text-container">Girl Style xin chào!!!</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var textContainer = document.getElementById("text-container");
+    var texts = ["Girl Style xin chào!!!","Vô vàng khuyến mãi hấp dẫn đang chờ đợi bạn!", "Nhanh tay chọn cho mình những sản phẩm ưng ý nhất!",
+     "Hãy đặt hàng liền tay ngay thôi!!!"];
+    var index = 0;
+
+    function changeText() {
+        textContainer.textContent = texts[index];
+        index = (index + 1) % texts.length;
+    }
+
+    setInterval(changeText, 1000); // Đổi đoạn chữ mỗi 2 giây
+});
+    </script>
+
+</body>
+</html>
